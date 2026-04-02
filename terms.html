@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms & Conditions — Shreeji Dry Fruits</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Poppins:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --red: #C62828;
+      --red-light: #EF5350;
+      --gold: #D4A017;
+      --gold-light: #F5C842;
+      --gold-pale: #FFF3D0;
+      --blue: #1A237E;
+      --cream: #FFF9F0;
+      --charcoal: #1C1410;
+      --text: #2D2420;
+      --text-light: #6B5E55;
+      --white: #FFFFFF;
+    }
+
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--text);
+      background: var(--cream);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    a {
+      color: var(--red);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 249, 240, 0.95);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      padding: 14px 0;
+    }
+
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      text-decoration: none;
+    }
+
+    .nav-logo-img {
+      height: 42px;
+      width: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-logo-img:hover {
+      transform: scale(1.03);
+    }
+
+    .nav-back {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav-back:hover {
+      color: var(--red);
+      text-decoration: none;
+    }
+
+    .nav-back svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .legal-hero {
+      padding: 80px 0 50px;
+      text-align: center;
+      position: relative;
+    }
+
+    .legal-hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+      border-radius: 2px;
+    }
+
+    .legal-hero .eyebrow {
+      font-family: 'Poppins', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .legal-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      color: var(--charcoal);
+      margin-bottom: 12px;
+    }
+
+    .legal-hero .updated {
+      font-size: 14px;
+      color: var(--text-light);
+    }
+
+    .legal-content {
+      padding: 60px 0 100px;
+    }
+
+    .legal-content p {
+      font-size: 15px;
+      line-height: 1.85;
+      color: var(--text-light);
+      margin-bottom: 20px;
+    }
+
+    .legal-content h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--charcoal);
+      margin: 48px 0 16px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .legal-content h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--blue);
+      margin: 32px 0 12px;
+    }
+
+    .legal-content ul {
+      margin: 16px 0 20px 24px;
+    }
+
+    .legal-content li {
+      font-size: 15px;
+      line-height: 1.85;
+      color: var(--text-light);
+      margin-bottom: 8px;
+      padding-left: 8px;
+    }
+
+    .legal-content li::marker {
+      color: var(--gold);
+    }
+
+    .legal-content strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .contact-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0 32px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .contact-table th,
+    .contact-table td {
+      padding: 14px 20px;
+      text-align: left;
+      font-size: 14px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .contact-table th {
+      background: var(--red);
+      color: var(--white);
+      font-weight: 600;
+      width: 35%;
+    }
+
+    .contact-table td {
+      background: var(--white);
+      color: var(--text);
+    }
+
+    .contact-table tr:last-child th,
+    .contact-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .mini-footer {
+      background: var(--charcoal);
+      color: rgba(255, 255, 255, 0.5);
+      padding: 32px 0;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .mini-footer a {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+    }
+
+    .mini-footer a:hover {
+      color: var(--gold-light);
+      text-decoration: none;
+    }
+
+    .mini-footer .links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      .legal-hero {
+        padding: 60px 0 30px;
+      }
+
+      .legal-hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .legal-content {
+        padding: 40px 0 60px;
+      }
+
+      .legal-content h2 {
+        font-size: 1.3rem;
+        margin: 32px 0 16px;
+        padding-top: 16px;
+      }
+
+      .contact-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+      .contact-table th,
+      .contact-table td {
+        padding: 10px 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="Shreeji Dry Fruits"
+          class="nav-logo-img"></a>
+      <a href="index.html" class="nav-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="19" y1="12" x2="5" y2="12" />
+          <polyline points="12 19 5 12 12 5" />
+        </svg> Back to Home</a>
+    </div>
+  </nav>
+
+  <div class="legal-hero">
+    <div class="container">
+      <div class="eyebrow">Legal</div>
+      <h1>Terms & Conditions</h1>
+      <p class="updated">Last Updated: March 2026</p>
+    </div>
+  </div>
+
+  <div class="legal-content">
+    <div class="container">
+      <p>Welcome to the Shreeji Dry Fruits mobile application (the "App"). These Terms and Conditions ("Terms")
+        constitute a legally binding agreement between you ("User," "you," or "your") and Shreeji Dry Fruits ("we,"
+        "our," or "us"), a proprietorship firm established in 1984 and operated by Mr. Jaysukh Thakrar, located in
+        Kandivali West, Mumbai, Maharashtra, India.</p>
+      <p>By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree with
+        any part of these Terms, please do not use the App.</p>
+
+      <h2>1. Eligibility</h2>
+      <p>You must be at least 18 years of age to create an account and use the App. By using the App, you represent and
+        warrant that you meet this age requirement and have the legal capacity to enter into these Terms. If you are
+        using the App on behalf of a business or organisation, you represent that you have the authority to bind that
+        entity to these Terms.</p>
+
+      <h2>2. Account Registration</h2>
+      <p>To access certain features of the App, including placing orders, you must create an account. You agree to:</p>
+      <ul>
+        <li>Provide accurate, current, and complete information during registration.</li>
+        <li>Maintain the security and confidentiality of your login credentials.</li>
+        <li>Immediately notify us of any unauthorised use of your account.</li>
+        <li>Accept responsibility for all activities that occur under your account.</li>
+      </ul>
+      <p>We reserve the right to suspend or terminate accounts that contain inaccurate information, are used
+        fraudulently, or violate these Terms.</p>
+
+      <h2>3. Products & Pricing</h2>
+      <h3>3.1 Product Information</h3>
+      <p>We make every effort to display our products accurately in the App, including descriptions, images, weights,
+        and nutritional information. However, due to the handmade and natural nature of many of our products
+        (particularly sweets and dry fruits), slight variations in appearance, colour, size, and weight may occur. Such
+        variations are inherent to artisanal food products and do not constitute a defect.</p>
+      <h3>3.2 Pricing</h3>
+      <p>All prices displayed in the App are in Indian Rupees (₹) and are inclusive of applicable GST unless stated
+        otherwise. Prices are subject to change without prior notice. The price applicable to your order is the price
+        displayed at the time of order placement. We reserve the right to correct pricing errors.</p>
+      <h3>3.3 Product Availability</h3>
+      <p>Product availability is subject to stock levels and may vary between our three store locations. Certain
+        seasonal or festival products (such as Diwali gift hampers or Holi specials) may be available for limited
+        periods only. We reserve the right to limit order quantities for specific products.</p>
+
+      <h2>4. Orders & Payment</h2>
+      <h3>4.1 Placing Orders</h3>
+      <p>When you place an order through the App, it constitutes an offer to purchase. We reserve the right to accept or
+        reject any order at our discretion. An order is considered confirmed only when you receive an order confirmation
+        notification from us.</p>
+      <h3>4.2 Payment Methods</h3>
+      <p>We accept the following payment methods through the App:</p>
+      <ul>
+        <li>UPI (Google Pay, PhonePe, Paytm, BHIM)</li>
+        <li>Credit and Debit Cards (Visa, Mastercard, RuPay)</li>
+        <li>Net Banking</li>
+        <li>Mobile Wallets</li>
+        <li>Cash on Delivery (COD) — available for orders below ₹5,000</li>
+      </ul>
+      <p>All online payments are processed through secure, PCI-DSS compliant third-party payment gateways. We do not
+        store your full payment card details.</p>
+      <h3>4.3 Payment Failure</h3>
+      <p>If a payment fails or is declined, your order will not be processed. If money is debited from your account but
+        the order is not confirmed, the amount will be refunded within 5–7 business days. Please contact your bank if
+        the refund does not appear within this timeframe.</p>
+
+      <h2>5. Delivery, Pickup & Courier</h2>
+      <h3>5.1 Delivery Options</h3>
+      <p>The App offers three delivery methods:</p>
+      <ul>
+        <li><strong>Home Delivery:</strong> Available within a defined radius of our store locations in Mumbai. Delivery
+          charges may apply based on order value and distance.</li>
+        <li><strong>Store Pickup:</strong> You may choose to pick up your order from any of our three stores. Orders not
+          collected within 24 hours of the ready notification may be cancelled.</li>
+        <li><strong>Courier Service:</strong> For customers outside our home delivery zone, we offer courier delivery to
+          addresses across India. Courier charges are calculated based on weight and destination.</li>
+      </ul>
+      <h3>5.2 Delivery Timelines</h3>
+      <p>We aim to deliver home delivery orders within 2–4 hours of order confirmation. You can select a preferred
+        delivery time slot at checkout. While we make every effort to meet estimated delivery times, delays may occur
+        due to traffic, weather, high order volumes during festivals, or other unforeseen circumstances.</p>
+      <h3>5.3 Delivery Responsibility</h3>
+      <p>Risk of loss and title for products passes to you upon delivery. You or your authorised representative must be
+        available to receive the delivery. If delivery cannot be completed due to your unavailability, re-delivery
+        charges may apply.</p>
+
+      <h2>6. Cancellation, Returns & Refunds</h2>
+      <h3>6.1 Cancellation</h3>
+      <p>You may cancel your order through the App before the order status changes to "Preparing." Once preparation has
+        begun, cancellation may not be possible as our products are freshly prepared. If cancellation is accepted, a
+        full refund will be initiated within 5–7 business days.</p>
+      <h3>6.2 Returns</h3>
+      <p>Due to the perishable nature of our products, we generally do not accept returns. However, we will investigate
+        and resolve the following issues:</p>
+      <ul>
+        <li>Wrong items delivered</li>
+        <li>Missing items from your order</li>
+        <li>Products received in damaged condition</li>
+        <li>Significant quality issues (staleness, contamination)</li>
+      </ul>
+      <p>Please report any such issues within 24 hours of delivery with photographic evidence through the App or by
+        contacting us directly.</p>
+      <h3>6.3 Refunds</h3>
+      <p>Approved refunds will be processed within 5–7 business days to your original payment method. For COD orders,
+        refunds will be credited to your App wallet or processed via bank transfer. Partial refunds may be issued at our
+        discretion for orders where only some items are affected.</p>
+
+      <h2>7. User Conduct</h2>
+      <p>When using the App, you agree not to:</p>
+      <ul>
+        <li>Use the App for any unlawful purpose or in violation of any applicable laws.</li>
+        <li>Provide false or misleading information during registration or ordering.</li>
+        <li>Attempt to gain unauthorised access to our systems or other users' accounts.</li>
+        <li>Use automated means (bots, scrapers) to access or interact with the App.</li>
+        <li>Post offensive, defamatory, or inappropriate content in reviews or communications.</li>
+        <li>Engage in abusive behaviour towards our delivery personnel or store staff.</li>
+        <li>Resell products purchased through the App for commercial purposes without our written consent.</li>
+      </ul>
+
+      <h2>8. Reviews & User Content</h2>
+      <p>You may submit reviews, ratings, and feedback through the App. By submitting content, you grant us a
+        non-exclusive, royalty-free, perpetual licence to use, display, and share your reviews on our platforms for
+        promotional and informational purposes. You represent that your reviews are honest and based on genuine
+        experience. We reserve the right to moderate, edit, or remove any user content at our sole discretion.</p>
+
+      <h2>9. Intellectual Property</h2>
+      <p>All content in the App, including but not limited to the Shreeji Dry Fruits name, logo (® registered
+        trademark), product images, descriptions, design elements, icons, graphics, and software, are the exclusive
+        property of Shreeji Dry Fruits or its licensors and are protected by applicable intellectual property laws. You
+        may not copy, reproduce, distribute, modify, or create derivative works of any content from the App without our
+        prior written consent.</p>
+
+      <h2>10. Limitation of Liability</h2>
+      <p>To the maximum extent permitted by applicable Indian law:</p>
+      <ul>
+        <li>The App and its content are provided on an "as is" and "as available" basis without warranties of any kind.
+        </li>
+        <li>We do not warrant that the App will be uninterrupted, error-free, or free of viruses.</li>
+        <li>Our total liability for any claim shall not exceed the amount you paid for the specific order giving rise to
+          the claim.</li>
+        <li>We shall not be liable for any indirect, incidental, special, consequential, or punitive damages.</li>
+      </ul>
+
+      <h2>11. Indemnification</h2>
+      <p>You agree to indemnify, defend, and hold harmless Shreeji Dry Fruits, its owner, employees, and agents from and
+        against any claims, liabilities, damages, losses, costs, and expenses arising out of your use of the App,
+        violation of these Terms, or infringement of any third-party rights.</p>
+
+      <h2>12. Governing Law & Dispute Resolution</h2>
+      <p>These Terms are governed by and construed in accordance with the laws of India. Any dispute arising out of or
+        relating to these Terms or the App shall be subject to the exclusive jurisdiction of the courts in Mumbai,
+        Maharashtra, India. Before initiating any legal proceedings, both parties agree to attempt to resolve disputes
+        amicably through good-faith negotiation for a period of at least 30 days.</p>
+
+      <h2>13. Modifications to Terms</h2>
+      <p>We reserve the right to modify these Terms at any time. Material changes will be communicated through the App
+        and will take effect upon posting. Your continued use of the App after any modifications constitutes your
+        acceptance of the updated Terms.</p>
+
+      <h2>14. Termination</h2>
+      <p>We may suspend or terminate your access to the App at any time, with or without cause, and with or without
+        notice. Upon termination, your right to use the App ceases immediately.</p>
+
+      <h2>15. Severability</h2>
+      <p>If any provision of these Terms is held to be invalid or unenforceable, such provision shall be modified to the
+        minimum extent necessary to make it valid, and the remaining provisions shall continue in full force and effect.
+      </p>
+
+      <h2>16. Entire Agreement</h2>
+      <p>These Terms, together with our <a href="privacy.html">Privacy Policy</a>, constitute the entire agreement
+        between you and Shreeji Dry Fruits regarding the use of the App.</p>
+
+      <h2>17. Contact Information</h2>
+      <p>For any questions or feedback regarding these Terms, please contact us:</p>
+      <table class="contact-table">
+        <tr>
+          <th>Business Name</th>
+          <td>Shreeji Dry Fruits</td>
+        </tr>
+        <tr>
+          <th>Proprietor</th>
+          <td>Mr. Jaysukh Thakrar</td>
+        </tr>
+        <tr>
+          <th>Address</th>
+          <td>Shop No. 4-5, Ganga Seva Kunj Building, Mathuradas Road, Kandivali (W), Mumbai 400067, India</td>
+        </tr>
+        <tr>
+          <th>Phone</th>
+          <td><a href="tel:+919321097420">+91 93210 97420</a></td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <td><a href="mailto:shreejidryfruits45@yahoo.co.in">shreejidryfruits45@yahoo.co.in</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <footer class="mini-footer">
+    <div class="container">
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+      </div>
+      <p>© 2026 Shreeji Dry Fruits. All Rights Reserved. Made with ❤️ in Mumbai, India</p>
+    </div>
+  </footer>
+</body>
+
+</html>
